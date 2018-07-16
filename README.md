@@ -1,9 +1,17 @@
 # Data Binding
 
+A minimal data-binding library.
+
+## Install
+
+```sh
+$ npm install --save bind-store
+```
+
 ## Usage
 
 ```js
-const createStore = require('data-binding');
+import { createStore } from 'bind-store'
 
-const stroe = createStore('name');
+const store = createStore('name');
 ```
