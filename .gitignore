@@ -1,0 +1,15 @@
+.DS_Store
+
+# Logs
+*.log
+log
+
+# Dependencies
+node_modules
+
+# Build assets
+dist
+
+# Temp files
+*.tmp
+tmp

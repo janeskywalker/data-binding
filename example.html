@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>review</title>
+
+		<style>
+
+	</style>
+</head>
+
+<body>
+
+<input id='input1' data-bind=stocks.donkey>
+
+
+<div data-bind='stocks.donkey'></div>
+
+<h data-bind='stocks.microsoft'></h>
+<p data-bind='stocks.microsoft'></p>
+
+<p data-bind='stocks.cat'></p>
+
+<!-- <p data-bind='weather.tempreture'></p>
+<p data-bind='weather.wind'></p>
+ -->
+
+<script type="module">
+
+import { createStore } from './src/index.js'
+
+const stocks = createStore('stocks')
+stocks.set('microsoft', 2000)
+stocks.set('microsoft', 4000)
+stocks.set('donkey', 'I am a donkey')
+stocks.set('cat', 'perrrrr')
+stocks.get('cat')
+
+// const weather = createStore('weather')
+// weather.set('tempreture', 100 +' fahrenheit')
+// weather.set('wind', 11 + ' mph')
+
+
+
+// stocks.watch('donkey', (val) =>{
+// 	console.log('watcher1',val)
+// })
+
+// stocks.watch('donkey', (val) =>{
+// 	console.log('watcher2',val)
+// })
+
+</script>
+
+
+
+
+
+</body>
+</html>
